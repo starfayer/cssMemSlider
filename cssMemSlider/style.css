@@ -124,3 +124,29 @@ body {
   left: -311%;
 }
 
+@media (max-width: 540px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .slider__images {
+    height: inherit;
+  }
+  .slider__img {
+    max-height: 350px;
+  }
+  .slider__image-container {
+    width: 500%;
+  }
+
+  #slide2:checked ~ .slider__images .slider__image-container {
+    left: -139%;
+  }
+  #slide3:checked ~ .slider__images .slider__image-container {
+    left: -265%;
+  }
+  #slide4:checked ~ .slider__images .slider__image-container {
+    left: -390%;
+  }
+  
+}
